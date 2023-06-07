@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm">
+        <label for="inp1" name="l1" id="l1">Name</label>
+        <input type="text" name="inp1"  id="i1" required>
+        <br>
+        <label for="inp2" name="l2">Department</label>
+        <input type="text" name="inp2">
+        <br>
+
+        <label>Gender</label><br>
+        male:<input type="radio" name="gender" value="male">
+        female:<input type="radio" name="gender" value="female"><br>
+        <label>Subjects</label><br>
+        sysops:<input type="checkbox" name="ch1" value="sysops">
+        devops:<input type="checkbox" name="ch2" value="devops">
+        <br><br>
+        <button name="submit" type="submit" onclick="validateForm()">submit</button>
+        <button name="reset" type="reset" >reset</button>
+    </form>
+</body>
+<script src="JavaScript.js"></script>
+</html>

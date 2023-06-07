@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rudra02
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rudra0006
+  template:
+    metadata:
+      labels:
+        app: rudra0006
+    spec:
+      containers:
+      - name: rudra0006
+        image: rudra08/rudra-repo1
+        resources:
+          limits: 
+            memory: "2556Mi"
+            cpu: "500m"
+        ports: 
+        - containerPort: 80
